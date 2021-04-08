@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Pig Game</title>
+  </head>
+
+  <body>
+    <div class="wrapper clearfix">
+      <img src="./img/win-image.gif" class="win-image" />
+      <div class="winning-score-container">
+        <button class="aboutTheGame-btn">Instructions</button>
+        <h5>Winning Score: <span class="win-score">30</span></h5>
+        <button class="playerInputs-btn">Game Inputs</button>
+      </div>
+
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Peppa</div>
+        <div class="player-score" id="score-0">0</div>
+        <div class="player-current-box current-box-0">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">0</div>
+        </div>
+      </div>
+
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Pumba</div>
+        <div class="player-score" id="score-1">0</div>
+        <div class="player-current-box current-box-1">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+
+      <button class="btn-new inside-btn">
+        <i class="ion-ios-plus-outline"></i>New game
+      </button>
+      <button class="btn-roll inside-btn">
+        <i class="ion-ios-loop"></i>Roll dice
+      </button>
+      <button class="btn-hold inside-btn">
+        <i class="ion-ios-download-outline"></i>Hold
+      </button>
+
+      <img src="dice-5.png" alt="Dice" class="dice" />
+    </div>
+
+    <div class="modal-container">
+      <div class="modal-content">
+        <h3>About the Game</h3>
+        <div class="modal-close-btn">&times;</div>
+        <div class="modal-body">
+          <p>
+            The objective of <strong>Pig Dice Game</strong> is to score more or
+            equal to the winning points before the opponent does.
+          </p>
+          <br />
+          <h3>GAME RULES:</h3>
+          <p>
+            - The game has 2 players, playing in rounds <br />
+            - The first player rolls the dice and scores according to the number
+            rolled. That player can roll the dice as much as possible until the
+            high score is reached. <br />
+            However, the player's turn will end <strong> IF:</strong> <br />
+            a. The dice rolls a value of 1. This will also turn the current
+            score to zero. <br />
+            b. The player decides to save the current score. <br />
+            -The default winning value is 30 points, but it can be set by the
+            players before the game. <br />
+            -The person who reaches or surpasses the said winning value, wins
+            the game. <br /><br />
+          </p>
+
+          <h3>Enjoy!</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <div class="form">
+        <input
+          type="text"
+          class="formInputs"
+          id="player-0"
+          placeholder="Player 1 Name"
+        />
+        <input
+          type="text"
+          class="formInputs"
+          id="player-1"
+          placeholder="Player 2 Name"
+        />
+        <input
+          type="number"
+          class="formInputs"
+          id="winning-number"
+          placeholder="Winning Value"
+        />
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+
+    <!-- <div class="winning-score-container">
+      <h4>Winning Score</h4>
+      <h2 class="win-score">30</h2>
+    </div> -->
+  </body>
+</html>
