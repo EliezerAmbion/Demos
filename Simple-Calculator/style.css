@@ -1,0 +1,154 @@
+html {
+    font-size: 150%;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(2, 2, 2, .5);
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px lightblue;
+}
+
+.calculator {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calculator_display {
+    background-color: rgba(5, 5, 5, .4);
+    color: white;
+    text-align: right;
+    padding: 1.5rem;
+    width: 15em;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.calculator_keys {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    /* grid-template-columns: repeat(4, 1fr); you can use 1fr in replace to auto */
+    grid-template-areas:
+    ". . . ."
+    "seven eight nine del"
+    "four five six equal"
+    "one two three equal"
+    "zero decimal clear equal";
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.del {
+    grid-area: del;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.decimal {
+    grid-area: decimal;
+}
+
+.clr {
+    grid-area: clear;
+}
+
+.equal {
+    grid-area: equal;
+    background-color: rgba(255, 117, 26);
+}
+
+.equal:hover{
+    background-color:  rgba(255, 117, 26, .75);
+}
+
+.equal:active{
+    background-color: cadetblue;
+}
+
+.btn_operators{
+    background-color: rgb(144, 212, 255);
+}
+
+.btn_operators,
+.btn_numbers {
+    padding: 15px;
+}
+
+.btn_operators:hover{
+    background-color:  rgba(144, 212, 255, .6);
+}
+
+.btn_operators:active{
+    background-color:  cadetblue;
+}
+
+.btn_numbers:hover{
+    background-color: lightgray;
+}
+
+.btn_numbers:active{
+    background-color:  cadetblue;
+}
+
+p {
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+@media screen and (max-width: 720px){
+    .calculator_display {
+        padding: 1rem;
+        width: 10em;
+    }
+}

@@ -19,9 +19,29 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
-.featured {
+main ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  height: 100%;
+  grid-template-areas:
+    'featured featured featured'
+    'featured featured featured'
+    'tictactoe';
+  gap: 0.5rem;
+}
+.featured a img {
   width: 40rem;
+  grid-area: featured;
+}
+#tictactoe {
+  grid-area: tictactoe;
+}
+img {
+  width: 20rem;
 }
 
 @font-face {
