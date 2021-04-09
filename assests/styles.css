@@ -22,37 +22,51 @@ main {
   height: 100%;
   width: 100%;
 }
-main ul {
+main div {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
-  height: 100%;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    'featured featured featured'
-    'featured featured featured'
-    'tictactoe';
-  gap: 0.5rem;
+    'featured featured a'
+    'featured featured b'
+    'tictactoe calculator c';
+  gap: 0.6rem;
 }
-.featured a img {
-  width: 40rem;
+.featured {
   grid-area: featured;
 }
 #tictactoe {
   grid-area: tictactoe;
 }
+#calculator {
+  grid-area: calculator;
+}
+#a {
+  grid-area: a;
+}
+#b {
+  grid-area: b;
+}
+#c {
+  grid-area: c;
+}
+.featured img {
+  width: 40.6rem;
+  height: 20.8rem;
+}
 img {
   width: 20rem;
+  height: 10rem;
 }
-
 @font-face {
   font-family: mont-exBold;
-  src: url(./fonts/Montserrat-ExtraBold.ttf);
+  src: url(../assests/fonts/Montserrat-ExtraBold.ttf);
 }
 @font-face {
   font-family: mont-reg;
-  src: url(./fonts/Montserrat-Regular.ttf);
+  src: url(../assests/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: mont-thin;
-  src: url(./fonts/Montserrat-Thin.ttf);
+  src: url(../assests/fonts/Montserrat-Thin.ttf);
 }
