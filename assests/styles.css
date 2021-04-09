@@ -27,7 +27,7 @@ main div {
   grid-template-columns: 0.8fr 0.8fr 0.8fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    'featured featured a'
+    'featured featured form'
     'featured featured b'
     'tictactoe calculator c';
   gap: 0.6rem;
@@ -52,7 +52,7 @@ main div {
 }
 .featured img {
   width: 40.6rem;
-  height: 20.8rem;
+  height: 20.9rem;
 }
 img {
   width: 20rem;
