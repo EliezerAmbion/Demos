@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #707070; */
+  background-color: #404040;
+  font-family: myFontMed;
+}
+
+.container {
+  background-color: #101010;
+  border-radius: 0.8em;
+  padding: 1.5em;
+  box-shadow: 2px 2px 5px #f0f0f0;
+}
+
+/* header */
+.title {
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.title span {
+  color: #00aeae;
+}
+
+.board-header {
+  color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: #00aeae;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2px;
+  background-color: #101010;
+}
+
+.cell {
+  width: 7em;
+  height: 7em;
+  background-color: #202020;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.historyBtns {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20%;
+  margin-left: 2rem;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  font-family: myFontLight;
+}
+
+.prev {
+  border: 2px solid #f0f0f0;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+
+.next {
+  border: 2px solid #f0f0f0;
+  padding: 0em 0.5em;
+  cursor: pointer;
+}
+
+.X::before {
+  content: '×';
+  font-size: 5rem;
+  color: #f0f0f0;
+}
+
+.O::before {
+  content: '○';
+  font-size: 5rem;
+  color: #00aeae;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #00aeae;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #f0f0f0;
+}
+
+@font-face {
+  font-family: myFontLight;
+  src: url(./fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: myFontReg;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: myFontMed;
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .historyBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0%;
+  }
+}
