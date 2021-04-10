@@ -1,0 +1,133 @@
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #FCEA00);
+}
+
+body {
+    background: url('../gow.jpg') no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: PAC-FONT;
+}
+
+.container {
+    width: 100%;
+}
+
+.top {
+    margin-top: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.top h1, .top p, .top span{
+    color: aliceblue;
+}
+
+.top p{
+    font-family: INVASION2000;
+    word-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+span{
+    font-family: INVASION2000;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    font-family: arcadeClassic;
+    word-spacing: 10px;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    padding: 20px 120px;
+    border-radius: 20px;
+    box-shadow: black 5px 5px 5px;
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom right, #FF320D, #448ee4);
+}
+
+input, select{
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.radio-form {
+    margin-top: 30px;
+}
+
+button {
+    border-radius: 10px;
+    box-shadow: black 3px 3px 3px;
+    font-family: arcadeClassic;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-family: PAC-FONT;
+    letter-spacing: 2px;
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.congrats {
+    color: white;
+    font-family: arcadeClassic;
+    text-align: center;
+    font-size: 2.5rem;
+    word-spacing: 15px;
+    border: 1px black solid;
+    height: 100vh;
+    background: linear-gradient(transparent, black);
+    letter-spacing: 5px;
+}
+
+#fonts {
+    margin: 0 200px;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+}
+
+#fonts a{
+    color: blanchedalmond;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 800px){
+    #survey-form{
+        padding: 10px;
+    }
+}
+
+@font-face{
+    src: url(../fonts/ARCADECLASSIC.TTF);
+    font-family: arcadeClassic;
+}
+
+@font-face{
+    src: url(../fonts/PAC-FONT.TTF);
+    font-family: PAC-FONT;
+}
+
+@font-face{
+    src: url(../fonts/INVASION2000.TTF);
+    font-family: INVASION2000;
+}

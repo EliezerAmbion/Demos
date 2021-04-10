@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1 id="title">Video Game Form</h1>
+            <p id="description">Tell us what you want to play.</p>
+            <span id='reg'>Register now and win a free game!</span>
+        </div>
+
+        <main>
+            <form id="survey-form" action="https://eliezerambion.github.io/batch6-activities/Form/html/action.html">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="enter your name" required>
+
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="enter your email" required>
+
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" name="age" id="number" min=5 max=99 placeholder="enter your age">
+
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div class="radio-form">
+                    Which do you prefer? <br>
+                    <input type="radio" name="platform">
+                    <label for="pc">PC</label><br>
+
+                    <input type="radio" name="platform">
+                    <label for="pc">Playstation</label><br>
+
+                    <input type="radio" name="platform">
+                    <label for="pc">Xbox</label><br>
+
+                    <input type="radio" name="platform">
+                    <label for="pc">Nintendo</label>
+                </div><br><br>
+
+
+                <div class="checkbox">
+                    Which games have you played before?<br>
+                    <input type="checkbox" name="game" id="GodOfWar" value="GodOfWar">
+                    <label for="GodOfWar">God of War</label><br>
+
+                    <input type="checkbox" name="game" id="CallOfDuty" value="CallOfDuty">
+                    <label for="CallOfDuty">Call of duty (any)</label><br>
+
+                    <input type="checkbox" name="game" id="Assassin's" value="Assassin's">
+                    <label for="Assassin's">Assassin's Creed series</label><br>
+
+                    <input type="checkbox" name="game" id="Valorant" value="Valorant">
+                    <label for="Valorant">Valorant</label><br>
+
+                    <input type="checkbox" name="game" id="MetroExodus" value="MetroExodus">
+                    <label for="MetroExodus">Metro Exodus</label><br>
+                </div><br><br>
+
+                Tell us your favorite game and why?
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="type here"></textarea>
+                <br>
+
+                <button id="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>Eliezer Ambion</p>
+        </footer>
+    </div>
+</body>
+
+</html>
