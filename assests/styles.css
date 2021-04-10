@@ -12,9 +12,20 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
   color: #e6e6e6;
 }
+.socMed_links {
+  width: 20px;
+  cursor: pointer;
+}
+#github {
+  filter: invert(1);
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -54,7 +65,7 @@ main div {
   width: 40.6rem;
   height: 20.9rem;
 }
-img {
+main div a img {
   width: 20rem;
   height: 10rem;
 }
