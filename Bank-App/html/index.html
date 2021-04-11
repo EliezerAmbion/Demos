@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js" defer></script>
+    <title>Eli's Bank App</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <h1><span>e</span>Bank</h1>
+      <nav class="header-nav-container">
+        <ul>
+          <li class="nav-li" id="nav-home-btn">Home</li>
+          <li class="nav-li" id="nav-login-btn">Login</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content-container">
+      <div class="left-content-container">
+        <h1 class="brand"><span>e</span>Bank</h1>
+        <p>Save your money with us and enjoy fast bank transactions!</p>
+        <img id="img-content" src="../img/revenue-animate.svg" alt="bank" />
+      </div>
+
+      <!-- right content-container -->
+      <div class="right-content-container">
+        <div class="home-container">
+          <h1>Have fun at work today!</h1>
+        </div>
+        <div class="form-container hidden">
+          <form action="../html/main.html">
+            <h1>Login</h1>
+            <label for="name">Employee ID:</label>
+            <input type="text" id="name" placeholder="admin" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="admin" required />
+            <button class="form-btn">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

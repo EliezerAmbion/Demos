@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/main.js" defer></script>
+    <script src="../js/functions.js" defer></script>
+    <title>Main Bank App</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <h1><span>e</span>Bank</h1>
+      <nav class="header-nav-container">
+        <ul>
+          <li class="nav-li" id="nav-signout-btn">
+            <a href="../html/index.html">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="grid_wrapper">
+      <div class="main-links-navbar">
+        <ul>
+          <li class="main-li active" id="customer-tab-btn">
+            <img src="../img/target.png" alt="" /> Customers
+          </li>
+          <li class="main-li" id="deposit-tab-btn">
+            <img src="../img/deposit.png" alt="" /> Deposit
+          </li>
+          <li class="main-li" id="withdraw-tab-btn">
+            <img src="../img/atm.png" alt="" /> Withdraw
+          </li>
+          <li class="main-li" id="transfer-tab-btn">
+            <img src="../img/money-transfer.png" alt="" /> Transfer
+          </li>
+        </ul>
+      </div>
+
+      <!-- customers tab -->
+      <div class="client-container" id="customer-section">
+        <form class="add-client-form">
+          <h1>Add Client</h1>
+          <label for="accountName">Account Name:</label>
+          <input
+            type="text"
+            id="accountName"
+            placeholder="Enter Account Name"
+            required
+          />
+          <label for="accountNumber">Account Number:</label>
+          <input
+            type="number"
+            id="accountNumber"
+            placeholder="Enter Account Number"
+            required
+          />
+          <label for="initialDeposit">Initial Deposit:</label>
+          <input
+            type="number"
+            id="initialDeposit"
+            placeholder="Enter Initial Deposit"
+            min="0"
+          />
+          <button class="client-btn" id="add-client-btn">Add Client</button>
+        </form>
+      </div>
+
+      <!-- deposit tab -->
+      <div class="client-container hidden" id="deposit-section">
+        <form action="" class="deposit-client-form">
+          <h1>Deposit</h1>
+          <label for="accountName-deposit-tab">Account Name:</label>
+          <input
+            type="text"
+            id="accountName-deposit-tab"
+            placeholder="Enter Account Name"
+            required
+          />
+          <label for="accountNumber-deposit-tab">Account Number:</label>
+          <input
+            type="number"
+            id="accountNumber-deposit-tab"
+            placeholder="Enter Account Number"
+            required
+          />
+          <label for="deposit-amount">Deposit Amount:</label>
+          <input
+            type="number"
+            id="deposit-amount"
+            placeholder=" Enter Deposit Amount"
+            min="0"
+          />
+          <button class="client-btn" id="deposit-btn">Deposit</button>
+        </form>
+      </div>
+
+      <!-- withdraw tab -->
+      <div class="client-container hidden" id="withdraw-section">
+        <form action="" class="withdraw-client-form">
+          <h1>Withdraw</h1>
+          <label for="accountName-withdraw-tab">Account Name:</label>
+          <input
+            type="text"
+            id="accountName-withdraw-tab"
+            placeholder="Enter Account Name"
+            required
+          />
+          <label for="accountNumber-withdraw-tab">Account Number:</label>
+          <input
+            type="number"
+            id="accountNumber-withdraw-tab"
+            placeholder="Enter Account Number"
+            required
+          />
+          <label for="withdraw-amount">Withdraw Amount:</label>
+          <input
+            type="number"
+            id="withdraw-amount"
+            placeholder="Enter Withdraw Amount"
+            min="0"
+          />
+          <button class="client-btn" id="withdraw-btn">Deposit</button>
+        </form>
+      </div>
+
+      <!-- transfer tab -->
+      <div class="client-container hidden" id="transfer-section">
+        <div class="wrapper-transfer">
+          <h1>Transfer</h1>
+          <form action="" class="transfer-client-form">
+            <div class="from transfer">
+              <!-- left side -->
+              <h2>From:</h2>
+              <label for="accountName-transfer-tab-from"
+                >Sender Account Name:</label
+              >
+              <input
+                type="text"
+                id="accountName-transfer-tab-from"
+                placeholder="Enter Account Name"
+                required
+              />
+              <label for="accountNumber-transfer-tab-from"
+                >Sender Account Number:</label
+              >
+              <input
+                type="number"
+                id="accountNumber-transfer-tab-from"
+                placeholder="Enter Account Number"
+                required
+              />
+              <label for="transfer-amount">Transfer Amount:</label>
+              <input
+                type="number"
+                id="transfer-amount"
+                placeholder="Enter Transfer Amount"
+                required
+              />
+            </div>
+
+            <!-- right side -->
+            <div class="to transfer">
+              <h2>To:</h2>
+              <label for="accountName-transfer-tab-to"
+                >Receiver Account Name:</label
+              >
+              <input
+                type="text"
+                id="accountName-transfer-tab-to"
+                placeholder="Enter Account Name"
+                required
+              />
+              <label for="accountNumber-transfer-tab-to"
+                >Receiver Account Number:</label
+              >
+              <input
+                type="number"
+                id="accountNumber-transfer-tab-to"
+                placeholder="Enter Account Number"
+                required
+              />
+              <button class="client-btn" id="transfer-btn">Transfer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- client directory table -->
+      <div class="table-container">
+        <fieldset>
+          <legend>Client Directory:</legend>
+          <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search Client" />
+            <button id="search-btn">Search</button>
+          </div>
+          <table class="table">
+            <tbody class="table-body">
+              <tr>
+                <th>Account Name:</th>
+                <th>Account Number:</th>
+                <th>Balance:</th>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+
+    <footer>
+      <div class="soc_med_container">
+        <img src="../img/facebook.png" alt="vb" /><img
+          src="../img/instagram.png"
+          alt="ig"
+        /><img src="../img/twitter.png" alt="" />
+      </div>
+
+      <div class="nocopyright">
+        <p>© No Copyright 2015 - 2021 All rights reserved @Avion School</p>
+      </div>
+
+      <h4>Created By: Eliezer Ambion</h4>
+    </footer>
+  </body>
+</html>
