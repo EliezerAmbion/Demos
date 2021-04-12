@@ -19,7 +19,6 @@ body {
 .grid_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 10% 40% 45%);
-  gap: 2rem;
 }
 
 .header-container {
@@ -27,7 +26,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 0 5rem;
   padding: 1rem;
   background-color: #44a4f2;
 }
