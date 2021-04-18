@@ -1,0 +1,54 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classPrivateMethodGet(receiver, privateSet, fn) { if (!privateSet.has(receiver)) { throw new TypeError("attempted to get private field on non-instance"); } return fn; }
+
+function _classPrivateFieldGet(receiver, privateMap) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "get"); return _classApplyDescriptorGet(receiver, descriptor); }
+
+function _classExtractFieldDescriptor(receiver, privateMap, action) { if (!privateMap.has(receiver)) { throw new TypeError("attempted to " + action + " private field on non-instance"); } return privateMap.get(receiver); }
+
+function _classApplyDescriptorGet(receiver, descriptor) { if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
+
+var _parentEl = new WeakMap();
+
+var _clearInput = new WeakSet();
+
+class SearchView {
+  constructor() {
+    _clearInput.add(this);
+
+    _parentEl.set(this, {
+      writable: true,
+      value: document.querySelector('.search')
+    });
+  }
+
+  getQuery() {
+    const query = _classPrivateFieldGet(this, _parentEl).querySelector('.search__field').value;
+
+    _classPrivateMethodGet(this, _clearInput, _clearInput2).call(this);
+
+    return query;
+  }
+
+  addHandlerSearch(handler) {
+    _classPrivateFieldGet(this, _parentEl).addEventListener('submit', function (e) {
+      e.preventDefault(); // prevent reload of page when submit is clicked
+
+      handler();
+    });
+  }
+
+}
+
+function _clearInput2() {
+  _classPrivateFieldGet(this, _parentEl).querySelector('.search__field').value = '';
+}
+
+var _default = new SearchView();
+
+exports.default = _default;

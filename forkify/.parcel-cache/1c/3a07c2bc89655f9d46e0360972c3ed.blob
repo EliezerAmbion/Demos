@@ -1,0 +1,45 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "set"); _classApplyDescriptorSet(receiver, descriptor, value); return value; }
+
+function _classExtractFieldDescriptor(receiver, privateMap, action) { if (!privateMap.has(receiver)) { throw new TypeError("attempted to " + action + " private field on non-instance"); } return privateMap.get(receiver); }
+
+function _classApplyDescriptorSet(receiver, descriptor, value) { if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } }
+
+var _parentElement = new WeakMap();
+
+var _data = new WeakMap();
+
+var _generateMarkup = new WeakSet();
+
+class RecipeView {
+  constructor() {
+    _generateMarkup.add(this);
+
+    _parentElement.set(this, {
+      writable: true,
+      value: document.querySelector('.recipe')
+    });
+
+    _data.set(this, {
+      writable: true,
+      value: void 0
+    });
+  }
+
+  render(data) {
+    _classPrivateFieldSet(this, _data, data);
+  }
+
+}
+
+function _generateMarkup2() {}
+
+var _default = new RecipeView();
+
+exports.default = _default;

@@ -1,0 +1,22 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _parentElement = new WeakMap();
+
+class RecipeView {
+  constructor() {
+    _parentElement.set(this, {
+      writable: true,
+      value: document.querySelector('.recipe')
+    });
+  }
+
+}
+
+var _default = new RecipeView();
+
+exports.default = _default;
