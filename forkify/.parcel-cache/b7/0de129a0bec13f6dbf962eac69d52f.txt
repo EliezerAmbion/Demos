@@ -1,9 +1,9 @@
 17289
 39/home/onoi/Desktop/forkify/package.json1618577153044549850 0
-50/home/onoi/Desktop/forkify/dist/icons.813f6eb1.svg1618822714509599730 0
-52/home/onoi/Desktop/forkify/dist/favicon.78a8766b.png1618822714513599740 0
-49/home/onoi/Desktop/forkify/dist/logo.4df831c1.png1618822714513599740 0
-31/home/onoi/Desktop/forkify/dist1618822714601599980 1
+50/home/onoi/Desktop/forkify/dist/icons.813f6eb1.svg1618836864952113407 0
+52/home/onoi/Desktop/forkify/dist/favicon.78a8766b.png1618836864952113407 0
+49/home/onoi/Desktop/forkify/dist/logo.4df831c1.png1618836864952113407 0
+31/home/onoi/Desktop/forkify/dist1618836864996113377 1
 55/home/onoi/Desktop/forkify/forkify-flowchart-part-2.png1603841514000000000 0
 58/home/onoi/Desktop/forkify/node_modules/debug/package.json499162500000000000 0
 55/home/onoi/Desktop/forkify/node_modules/debug/README.md499162500000000000 0
@@ -5436,7 +5436,7 @@
 85/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/features/input-selection.js499162500000000000 0
 63/home/onoi/Desktop/forkify/node_modules/core-js/es/array/map.js499162500000000000 0
 90/home/onoi/Desktop/forkify/node_modules/jsdom/lib/jsdom/living/nodes/SVGSVGElement-impl.js499162500000000000 0
-58/home/onoi/Desktop/forkify/dist/controller.bbff3cb4.js.map1618822714601599980 0
+58/home/onoi/Desktop/forkify/dist/controller.bbff3cb4.js.map1618836864996113377 0
 89/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/features/css-text-align-last.js499162500000000000 0
 84/home/onoi/Desktop/forkify/node_modules/@babel/plugin-transform-sticky-regex/LICENSE456789000000000000 0
 63/home/onoi/Desktop/forkify/node_modules/micromatch/package.json499162500000000000 0
@@ -5527,7 +5527,7 @@
 83/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/features/pad-start-end.js499162500000000000 0
 84/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/features/pagevisibility.js499162500000000000 0
 74/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/features/webp.js499162500000000000 0
-47/home/onoi/Desktop/forkify/src/js/controller.js1618822572369211770 0
+47/home/onoi/Desktop/forkify/src/js/controller.js1618835105814198011 0
 79/home/onoi/Desktop/forkify/node_modules/es-abstract/2020/IsGenericDescriptor.js499162500000000000 0
 71/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/regions/SH.js499162500000000000 0
 77/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/features/css-all.js499162500000000000 0
@@ -8191,7 +8191,7 @@
 85/home/onoi/Desktop/forkify/node_modules/@parcel/transformer-pug/src/PugTransformer.js499162500000000000 0
 50/home/onoi/Desktop/forkify/node_modules/verror/lib1618567153839009238 1
 69/home/onoi/Desktop/forkify/node_modules/core-js/modules/es.promise.js499162500000000000 0
-47/home/onoi/Desktop/forkify/src/js/views/View.js1618821915839359190 0
+47/home/onoi/Desktop/forkify/src/js/views/View.js1618823144703748678 0
 77/home/onoi/Desktop/forkify/node_modules/@parcel/optimizer-terser/package.json499162500000000000 0
 94/home/onoi/Desktop/forkify/node_modules/@parcel/runtime-browser-hmr/src/loaders/.eslintrc.json499162500000000000 0
 71/home/onoi/Desktop/forkify/node_modules/source-map-support/node_modules1618567152119008211 1
@@ -8721,7 +8721,7 @@
 97/home/onoi/Desktop/forkify/node_modules/http-proxy-middleware/node_modules/is-extendable/index.js1436049745000000000 0
 90/home/onoi/Desktop/forkify/node_modules/@nodelib/fs.walk/out/providers/async.spec.d.ts.map499162500000000000 0
 52/home/onoi/Desktop/forkify/node_modules/pn/timers.js1515010282000000000 0
-42/home/onoi/Desktop/forkify/src/js/model.js1618811550940914986 0
+42/home/onoi/Desktop/forkify/src/js/model.js1618836864772113528 0
 105/home/onoi/Desktop/forkify/node_modules/@parcel/watcher/node_modules/node-addon-api/doc/prebuild_tools.md499162500000000000 0
 60/home/onoi/Desktop/forkify/node_modules/acorn/dist/acorn.mjs499162500000000000 0
 71/home/onoi/Desktop/forkify/node_modules/es-abstract/2020/MinFromTime.js499162500000000000 0
@@ -8746,7 +8746,7 @@
 73/home/onoi/Desktop/forkify/node_modules/es-abstract/2017/IteratorClose.js499162500000000000 0
 66/home/onoi/Desktop/forkify/node_modules/es-abstract/test/es2020.js499162500000000000 0
 112/home/onoi/Desktop/forkify/node_modules/snapdragon/node_modules/is-data-descriptor/node_modules/kind-of/index.js1493120356000000000 0
-54/home/onoi/Desktop/forkify/src/js/views/resultsView.js1618822713769597717 0
+54/home/onoi/Desktop/forkify/src/js/views/resultsView.js1618822979874823990 0
 71/home/onoi/Desktop/forkify/node_modules/caniuse-lite/data/regions/BS.js499162500000000000 0
 61/home/onoi/Desktop/forkify/node_modules/acorn/dist/acorn.d.ts499162500000000000 0
 97/home/onoi/Desktop/forkify/node_modules/@babel/helper-member-expression-to-functions/lib/index.js456789000000000000 0
@@ -9156,7 +9156,7 @@
 67/home/onoi/Desktop/forkify/node_modules/@nodelib/fs.scandir/LICENSE499162500000000000 0
 67/home/onoi/Desktop/forkify/node_modules/@parcel/bundler-default/lib1618567153595009092 1
 64/home/onoi/Desktop/forkify/node_modules/snapdragon-util/index.js1498383946000000000 0
-53/home/onoi/Desktop/forkify/src/js/views/recipeView.js1618815477120029704 0
+53/home/onoi/Desktop/forkify/src/js/views/recipeView.js1618835161817668134 0
 86/home/onoi/Desktop/forkify/node_modules/es-abstract/2018/EnumerableOwnPropertyNames.js499162500000000000 0
 103/home/onoi/Desktop/forkify/node_modules/regenerate-unicode-properties/Script_Extensions/Syloti_Nagri.js499162500000000000 0
 86/home/onoi/Desktop/forkify/node_modules/core-js/modules/es.typed-array.uint16-array.js499162500000000000 0
@@ -9740,7 +9740,7 @@
 73/home/onoi/Desktop/forkify/node_modules/cssstyle/lib/properties/bottom.js499162500000000000 0
 91/home/onoi/Desktop/forkify/node_modules/postcss-selector-parser/dist/selectors/className.js499162500000000000 0
 83/home/onoi/Desktop/forkify/node_modules/es-abstract/test/helpers/OwnPropertyKeys.js499162500000000000 0
-42/home/onoi/Desktop/forkify/dist/index.html1618822714509599730 0
+42/home/onoi/Desktop/forkify/dist/index.html1618836864952113407 0
 75/home/onoi/Desktop/forkify/node_modules/es-abstract/2020/Number/subtract.js499162500000000000 0
 64/home/onoi/Desktop/forkify/node_modules/core-js/es/array/sort.js499162500000000000 0
 80/home/onoi/Desktop/forkify/node_modules/create-ecdh/node_modules/bn.js/README.md499162500000000000 0
@@ -11082,7 +11082,7 @@
 56/home/onoi/Desktop/forkify/node_modules/is-number-object1618567153899009274 1
 67/home/onoi/Desktop/forkify/node_modules/@parcel/bundler-default/src1618567153747009183 1
 91/home/onoi/Desktop/forkify/node_modules/@parcel/package-manager/src/MockPackageInstaller.js499162500000000000 0
-54/home/onoi/Desktop/forkify/dist/controller.bbff3cb4.js1618822714597599970 0
+54/home/onoi/Desktop/forkify/dist/controller.bbff3cb4.js1618836864996113377 0
 58/home/onoi/Desktop/forkify/node_modules/randomfill/LICENSE1501179389000000000 0
 98/home/onoi/Desktop/forkify/node_modules/regenerate-unicode-properties/Script_Extensions/Myanmar.js499162500000000000 0
 50/home/onoi/Desktop/forkify/node_modules/ejs/ejs.js1574190985000000000 0
@@ -13527,7 +13527,7 @@
 52/home/onoi/Desktop/forkify/node_modules/css-tree/lib1618567154575009678 1
 75/home/onoi/Desktop/forkify/node_modules/es-abstract/2017/thisStringValue.js499162500000000000 0
 111/home/onoi/Desktop/forkify/node_modules/regenerate-unicode-properties/General_Category/Connector_Punctuation.js499162500000000000 0
-49/home/onoi/Desktop/forkify/dist/main.69f5f78b.css1618822714513599740 0
+49/home/onoi/Desktop/forkify/dist/main.69f5f78b.css1618836864952113407 0
 102/home/onoi/Desktop/forkify/node_modules/regenerate-unicode-properties/General_Category/Other_Symbol.js499162500000000000 0
 101/home/onoi/Desktop/forkify/node_modules/regenerate-unicode-properties/General_Category/Private_Use.js499162500000000000 0
 100/home/onoi/Desktop/forkify/node_modules/@babel/helper-create-class-features-plugin/lib/decorators.js456789000000000000 0
@@ -15468,7 +15468,7 @@
 60/home/onoi/Desktop/forkify/node_modules/randombytes/index.js499162500000000000 0
 60/home/onoi/Desktop/forkify/node_modules/has-symbols/shams.js499162500000000000 0
 66/home/onoi/Desktop/forkify/node_modules/whatwg-url/lib/URL-impl.js499162500000000000 0
-53/home/onoi/Desktop/forkify/dist/main.69f5f78b.css.map1618822714513599740 0
+53/home/onoi/Desktop/forkify/dist/main.69f5f78b.css.map1618836864956113404 0
 62/home/onoi/Desktop/forkify/node_modules/css-selector-tokenizer1618567153863009252 1
 73/home/onoi/Desktop/forkify/node_modules/whatwg-url/lib/URLSearchParams.js499162500000000000 0
 76/home/onoi/Desktop/forkify/node_modules/core-js/es/array/virtual/index-of.js499162500000000000 0

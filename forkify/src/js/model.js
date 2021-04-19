@@ -10,6 +10,7 @@ export const state = {
     page: 1,
     resultsPerPage: RES_PER_PAGE,
   },
+  bookmarks: [],
 };
 
 export const loadRecipe = async function (id) {
@@ -18,6 +19,7 @@ export const loadRecipe = async function (id) {
 
     const { recipe } = data.data;
     state.recipe = {
+      // change the name for easier access
       id: recipe.id,
       title: recipe.title,
       publisher: recipe.publisher,
@@ -27,6 +29,9 @@ export const loadRecipe = async function (id) {
       cookingTime: recipe.cooking_time,
       ingredients: recipe.ingredients,
     };
+    if (state.bookmarks.some((bookmark) => bookmark.id === id))
+      state.recipe.bookmarked = true;
+    else state.recipe.bookmarked = false;
   } catch (err) {
     // temporary error handling
     console.error(`${err}`);
@@ -49,6 +54,7 @@ export const loadSearchResults = async function (query) {
         image: rec.image_url,
       };
     });
+    state.search.page = 1; // when you do a new search, the page will set back to 1
   } catch (err) {
     console.log(`${err}`);
     throw err;
@@ -71,4 +77,21 @@ export const updateServings = function (newServings) {
   });
 
   state.recipe.servings = newServings;
+};
+
+export const addBookmark = function (recipe) {
+  // Add bookmark
+  state.bookmarks.push(recipe);
+
+  // Mark current recipe as bookmarked
+  if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;
+};
+
+export const deleteBookmark = function (id) {
+  // this is a common pattern used. you just get the id to delete bookmark // see controller.js, controlAddBookmark
+  const index = state.bookmarks.findIndex((el) => el.id === id);
+  state.bookmarks.splice(index, 1);
+
+  // Mark current recipe as NOT bookmarked
+  if (id === state.recipe.id) state.recipe.bookmarked = false;
 };
