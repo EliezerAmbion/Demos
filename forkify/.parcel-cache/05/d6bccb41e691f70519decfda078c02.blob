@@ -548,15 +548,10 @@ const controlBookmarks = function () {
   _bookmarksView.default.render(model.state.bookmarks);
 };
 
-const controlAddRecipe = async function (newRecipe) {
-  try {
-    // Upload the new recipe data
-    await model.uploadRecipe(newRecipe);
-  } catch (err) {
-    console.error(err);
-
-    _addRecipeView.default.renderError(err.message);
-  }
+const controlAddRecipe = function (newRecipe) {
+  // console.log(newRecipe);
+  // Upload the new recipe data
+  model.uploadRecipe(newRecipe);
 };
 
 const init = function () {
@@ -4050,21 +4045,17 @@ const clearBookmarks = function () {
 
 
 const uploadRecipe = async function (newRecipe) {
-  try {
-    const ingredients = Object.entries(newRecipe).filter(entry => entry[0].startsWith('ingredient') && entry[1] !== '').map(ing => {
-      const ingArr = ing[1].replaceAll(' ', '').split(',');
-      if (ingArr.length !== 3) throw new Error('Wrong Ingredient Format. Please use the correct format');
-      const [quantity, unit, description] = ingArr;
-      return {
-        quantity: quantity ? +quantity : null,
-        unit,
-        description
-      };
-    });
-    console.log(ingredients);
-  } catch (err) {
-    throw err;
-  }
+  const ingredients = Object.entries(newRecipe).filter(entry => entry[0].startsWith('ingredient') && entry[1] !== '').map(ing => {
+    const ingArr = ing[1].replaceAll(' ', '').split(',');
+    if (ingArr.length !== 3) throw new Error('Wrong Ingredient Format. Please use the correct format');
+    const [quantity, unit, description] = ingArr;
+    return {
+      quantity: quantity ? +quantity : null,
+      unit,
+      description
+    };
+  });
+  console.log(ingredients);
 };
 
 exports.uploadRecipe = uploadRecipe;

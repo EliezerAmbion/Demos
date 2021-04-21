@@ -548,10 +548,10 @@ const controlBookmarks = function () {
   _bookmarksView.default.render(model.state.bookmarks);
 };
 
-const controlAddRecipe = async function (newRecipe) {
+const controlAddRecipe = function (newRecipe) {
   try {
     // Upload the new recipe data
-    await model.uploadRecipe(newRecipe);
+    model.uploadRecipe(newRecipe);
   } catch (err) {
     console.error(err);
 
@@ -4062,9 +4062,7 @@ const uploadRecipe = async function (newRecipe) {
       };
     });
     console.log(ingredients);
-  } catch (err) {
-    throw err;
-  }
+  } catch (err) {}
 };
 
 exports.uploadRecipe = uploadRecipe;
