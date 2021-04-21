@@ -1,0 +1,58 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _View = _interopRequireDefault(require("./View.js"));
+
+var _icons = _interopRequireDefault(require("url:../../img/icons.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// parcel 2
+class AddRecipeView extends _View.default {
+  constructor() {
+    super();
+
+    _defineProperty(this, "_parentElement", document.querySelector('.upload'));
+
+    _defineProperty(this, "_window", document.querySelector('.add-recipe-window'));
+
+    _defineProperty(this, "_overlay", document.querySelector('.overlay'));
+
+    _defineProperty(this, "_btnOpen", document.querySelector('.nav__btn--add-recipe'));
+
+    _defineProperty(this, "_btnClose", document.querySelector('.btn--close-modal'));
+
+    this._addHandlerShowWindow();
+
+    this._addHandlerHideWindow();
+  }
+
+  toggleWindow() {
+    this._overlay.classList.toggle('hidden');
+
+    this._window.classList.toggle('hidden');
+  }
+
+  _addHandlerShowWindow() {
+    this._btnOpen.addEventListener('click', this.toggleWindow.bind(this));
+  }
+
+  _addHandlerHideWindow() {
+    this._btnClose.addEventListener('click', this.toggleWindow.bind(this));
+
+    this._overlay.addEventListener('click', this.toggleWindow.bind(this));
+  }
+
+  _generateMarkup() {}
+
+}
+
+var _default = new AddRecipeView();
+
+exports.default = _default;
