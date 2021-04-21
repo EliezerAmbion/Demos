@@ -1,0 +1,38 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _View = _interopRequireDefault(require("./View.js"));
+
+var _previewView = _interopRequireDefault(require("./previewView.js"));
+
+var _icons = _interopRequireDefault(require("url:../../img/icons.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// parcel 2
+class ResultsView extends _View.default {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "_parentElement", document.querySelector('.results'));
+
+    _defineProperty(this, "_errorMessage", `No recipes found for your query! Please try again.`);
+
+    _defineProperty(this, "_message", '');
+  }
+
+  _generateMarkup() {
+    return this._data.map(result => _previewView.default.render(result, false)).join('');
+  }
+
+}
+
+var _default = new ResultsView();
+
+exports.default = _default;
