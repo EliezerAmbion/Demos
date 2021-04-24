@@ -1,0 +1,99 @@
+$primaryColor: #404040;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $primaryColor;
+}
+
+.calculator {
+  border-radius: 10px;
+  // overflow: hidden;
+}
+
+.calculator_display {
+  background-color: rgba(5, 5, 5, 0.4);
+  color: white;
+  text-align: right;
+  padding: 4rem 3rem;
+  width: 20rem;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 4rem;
+}
+
+.calculator_keys {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  grid-template-areas:
+    '. . . .'
+    'seven eight nine equal'
+    'four five six equal'
+    'one two three equal'
+    'zero decimal clear equal';
+
+  button {
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+
+  .five {
+    grid-area: five;
+  }
+
+  .six {
+    grid-area: six;
+  }
+
+  .seven {
+    grid-area: seven;
+  }
+
+  .eight {
+    grid-area: eight;
+  }
+
+  .nine {
+    grid-area: nine;
+  }
+
+  .zero {
+    grid-area: zero;
+  }
+
+  .decimal {
+    grid-area: decimal;
+  }
+
+  .clear {
+    grid-area: clear;
+  }
+
+  .equal {
+    grid-area: equal;
+    background-color: rgba(255, 117, 26);
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "Basic calculator",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir ./dist"
+  },
+  "author": "Eliezer Ambion",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.11"
+  }
+}

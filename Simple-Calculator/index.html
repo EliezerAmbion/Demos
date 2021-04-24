@@ -5,43 +5,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.scss">
+  <script src="main.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Calculator</title>
 </head>
 
 <body>
-  <nav>Simple Calculator</nav>
   <div class="container">
     <div class="calculator">
-      <div class="calculator_display"></div>
+      <div class="calculator_display">0</div>
       <div class="calculator_keys">
-        <button onclick="display('+')" class="btn_operators">+</button>
-        <button onclick="display('-')" class="btn_operators">-</button>
-        <button onclick="display('*')" class="btn_operators">&times;</button>
-        <button onclick="display('/')" class="btn_operators">/</button>
-        <button onclick="display('1')" class="btn_numbers one">1</button>
-        <button onclick="display('2')" class="btn_numbers two2">2</button>
-        <button onclick="display('3')" class="btn_numbers three">3</button>
-        <button onclick="display('4')" class="btn_numbers four">4</button>
-        <button onclick="display('5')" class="btn_numbers five">5</button>
-        <button onclick="display('6')" class="btn_numbers six">6</button>
-        <button onclick="display('7')" class="btn_numbers seven">7</button>
-        <button onclick="display('8')" class="btn_numbers eight">8</button>
-        <button onclick="display('9')" class="btn_numbers nine">9</button>
-        <button onclick="display('0')" class="btn_numbers zero">0</button>
-        <button onclick="display('.')" class="btn_numbers dec">.</button>
-        <button onclick="del()" class="btn_numbers del">del</button>
-        <button onclick="clean()" class="btn_numbers clr">C</button>
-        <button onclick="equal()" class="btn_numbers equal">=</button>
-
+        <button data-key="plus" data-type="operator">+</button>
+        <button data-key="minus" data-type="operator">-</button>
+        <button data-key="times" data-type="operator">&times;</button>
+        <button data-key="divide" data-type="operator">/</button>
+        <button class="one" data-type="number">1</button>
+        <button class="two" data-type="number">2</button>
+        <button class="three" data-type="number">3</button>
+        <button class="four" data-type="number">4</button>
+        <button class="five" data-type="number">5</button>
+        <button class="six" data-type="number">6</button>
+        <button class="seven" data-type="number">7</button>
+        <button class="eight" data-type="number">8</button>
+        <button class="nine" data-type="number">9</button>
+        <button class="zero" data-type="number">0</button>
+        <button class="decimal" data-type="number">.</button>
+        <button class="clear" data-type="number">C</button>
+        <button class="equal" data-type="equal">=</button>
       </div>
     </div>
-
-    <p>eliezer ambion</p>
-
 </body>
-<script src="main.js"></script>
-
 </html>
