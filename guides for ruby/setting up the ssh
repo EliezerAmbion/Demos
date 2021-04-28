@@ -1,0 +1,21 @@
+setting up the ssh
+type: git
+type: ssh-keygen
+type: cat ~/.ssh/id_rsa.pub
+copy the ssh-rsa (everything)
+go to your github and go to settings -> SSH and GPG keys tab -> click new SSH key
+create a title and paste the copied ssh-rsa to key input box then save
+create a new repo in github but don't add a readme file
+in your newly created repo, copy the ssh. NOT the https.
+go back to your terminal and create a new folder
+
+cd to that folder and type: git init
+you must see initialized empty git repository etc.. or reinitialized exisiting Git etc..
+type: git remote add origin <copied ssh> then enter
+create files on that folder by using touch or go to vscode by typing code . (dot)
+-now you can create a project, once done
+go back to your terminal and:
+type git status
+type git add .
+git commit -m "message"
+git push origin master

@@ -1,0 +1,41 @@
+echo ". $HOME/.asdf/asdf.sh" >> ~/.bashrc
+echo ". $HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
+
+asdf plugin-add ruby
+
+sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
+
+asdf install ruby latest
+
+asdf global ruby <version>
+
+asdf reshim ruby
+
+sudo apt-get install dirmngr
+sudo apt-get install gpg
+sudo apt-get install curl
+sudo apt-get install gawk
+
+asdf plugin add nodejs
+
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-previous-release-team-keyring'
+
+asdf install nodejs latest
+
+asdf global nodejs <version>
+
+asdf reshim nodejs
+
+asdf plugin-add yarn
+
+asdf install yarn latest
+
+asdf global yarn <version>
+
+asdf reshim yarn
+
+code ~/.asdfrc
+
+legacy_version_file = yes
+
+https://github.com/smashedtoatoms/asdf-postgres
